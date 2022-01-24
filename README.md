@@ -1,2 +1,2 @@
-# xtp83.github.io
+# GOEU.github.io
 GOEU
