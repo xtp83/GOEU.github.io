@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+      <meta charset="utf-8">
+	<!-- compatibilidad Bootstrap 4 para cualquier dispositivo. -->
+	  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<!-- compatibilidad Bootstrap 4 para navegadores inclusive IE, Edge. -->
+	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Google Tag Manager -->
+	  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+      <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+         j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+         'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+         })(window,document,'script','dataLayer','GTM-N8S35CK');
+	  </script>
+	<!-- poner aparte Google Tag Manager INI -->	
+	  <script>
+    (function() {
+    class RuffleMimeType {
+        constructor(a, b, c) {
+            this.type = a, this.description = b, this.suffixes = c
+        }
+    }
+    class RuffleMimeTypeArray {
+        constructor(a) {
+            this.__mimetypes = [], this.__named_mimetypes = {};
+            for (let b of a) this.install(b)
+        }
+        install(a) {
+            let b = this.__mimetypes.length;
+            this.__mimetypes.push(a), this.__named_mimetypes[a.type] = a, this[a.type] = a, this[b] = a
+        }
+        item(a) {
+            return this.__mimetypes[a]
+        }
+        namedItem(a) {
+            return this.__named_mimetypes[a]
+        }
+        get length() {
+            return this.__mimetypes.length
+        }
+    }
+    class RufflePlugin extends RuffleMimeTypeArray {
+        constructor(a, b, c, d) {
+            super(d), this.name = a, this.description = b, this.filename = c
+        }
+        install(a) {
+            a.enabledPlugin || (a.enabledPlugin = this), super.install(a)
+        }
+    }
+    class RufflePluginArray {
+        constructor(a) {
+            this.__plugins = [], this.__named_plugins = {};
+            for (let b of a) this.install(b)
+        }
+        install(a) {
+            let b = this.__plugins.length;
+            this.__plugins.push(a), this.__named_plugins[a.name] = a, this[a.name] = a, this[b] = a
+        }
+        item(a) {
+            return this.__plugins[a]
+        }
+        namedItem(a) {
+            return this.__named_plugins[a]
+        }
+        get length() {
+            return this.__plugins.length
+        }
+    }
+    const FLASH_PLUGIN = new RufflePlugin("Shockwave Flash", "Shockwave Flash 32.0 r0", "ruffle.js", [new RuffleMimeType("application/futuresplash", "Shockwave Flash", "spl"), new RuffleMimeType("application/x-shockwave-flash", "Shockwave Flash", "swf"), new RuffleMimeType("application/x-shockwave-flash2-preview", "Shockwave Flash", "swf"), new RuffleMimeType("application/vnd.adobe.flash-movie", "Shockwave Flash", "swf")]);
+
+    function install_plugin(a) {
+        navigator.plugins.install || Object.defineProperty(navigator, "plugins", {
+            value: new RufflePluginArray(navigator.plugins),
+            writable: !1
+        }), navigator.plugins.install(a), 0 < a.length && !navigator.mimeTypes.install && Object.defineProperty(navigator, "mimeTypes", {
+            value: new RuffleMimeTypeArray(navigator.mimeTypes),
+            writable: !1
+        });
+        for (var b = 0; b < a.length; b += 1) navigator.mimeTypes.install(a[b])
+    }
+    install_plugin(FLASH_PLUGIN);
+})();
+	   </script>
+	<!-- descripción patra los navegadores. -->	
+	  <meta name="desription" content="Masonería española plural, humanista y esotérica para el conocimiento de uno mismo."/>
+	<!-- autor de la web site. -->	
+	  <meta name="author" content="G.O.E.U."/>
+	<!-- palabras clave para buscadores. -->
+	  <meta name="Keywords" content="GOEU, G.O.E.U., G. O. E. U., G.·.O.·.E.·.U.·., masonería, Masonería, logia, Logia, escuela, Escuela, plural, Plural, gran, Gran, oriente, Oriente, español, Español"/>
+      <title>G.O.E.U. - Gran Oriente Español Unido</title>
+	<!--fichero de Bootstrap.-->   
+	  <link rel="stylesheet" href="../css/bootstrap.css">
+    <!-- definición de la versión del Bootstrap básica para el CSS. -->
+	  <link href="./css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+	<!-- definición del archivo propio para el CSS. -->
+	  <link href="./css/styles.css" rel="stylesheet" type="text/css">
+    <!--información de tipo de letra sacado del fonts de google.-->
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,300;0,600;0,900;1,100;1,700&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+	<!--shortcut GOEU.-->   
+	  <link rel="shortcut icon" type="image/x-icon" href="./images/faviconGOEU.ico">
+    <!--descarga de fuentes del servidor de Adobe Edge Web Fonts. -->
+	  <script>var __adobewebfontsappname__="dreamweaver"</script>
+	  <script src="http://use.edgefonts.net/alex-brush:n4:default;adamina:n4:default;arizonia:n4:default;italianno:n4:default;trykker:n4:default;antic-didone:n4:default;parisienne:n4:default;buda:n3:default;diplomata:n4:default;sail:n4:default.js" type="text/javascript"></script>	
+	  <link href:"https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.dark.min.css" rel="stylesheet">
+	  <link href:"https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.dark.rtl.min.css" rel="stylesheet">
+	  <link href:"https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.css" rel="stylesheet">
+	  <link href:"https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.rtl.min.css" rel="stylesheet">
+	<!--recursos scripts para poder usar en funcionalidades varias de HTML. -->
+	  <script> src="./js/smooth-scroll.js"</script>
+	  <script> src="./js/menu.js"</script>
+	  <script> src="./js/logo.js"</script>
+      <script> src="./js/reloj.js"</script>
+	  <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+   </head>
+    <!-- espaciado entre encabezado y cuerpo. -->
+   <body>
+	<!-- Google Tag Manager (noscript) -->
+	  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N8S35CK"
+         height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	  </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+	  <div class="aviso-cookies" id="aviso-cookies"> 
+	     <img class="galleta" align-content="center" src="./images/cookie.svg" alt="Galleta">
+		 <h3 class="titulo" align="center">Cookies</h3>
+		 <p class="parrafo">Utilizamos cookies propias y de terceros para mejorar nuestros servicios y la experiencia de navegación. Si Ud. acepta consideraremos que Ud. está de acuerdo en su uso. Puede cambiar la configuración de su navegador web u obtener más información en <a class="enlace" href="aviso-cookies.html"><b>Aviso de cookies</b></a>.</p>
+		 <button class="boton" id="btn-aceptar-cookies"><b>Acepto</b></button>
+	  </div>
+	  <div class="fondo-aviso-cookies" id="fondo-aviso-cookies"></div>
+      <header class="cabecera" id="cabecera">
+		<table class="tablaCabecera" id="tablaCabecera">
+			<tr class="primeraFila" id="primeraFila">
+            	<nav class="navbar navbar-expand-lg bg-inverse navbar-toggleable-sm navbar-light bg-light">
+				<button class="navbar-toggler" class= "navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerTop" aria-controls="navbarTogglerTop" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				<div class="collapse navbar-collapse" id="navbarTogglerTop">
+				   <div class="container-0">
+  			          <div class="container-1">
+						 <div class="icono-lupa"><i class="fa fa-search"></i></div>
+                         <input type="search" id="search" placeholder="Búsqueda..." title="Realice una búsqueda">
+                      </div>
+  			          <div class="container-2">
+						 <a class="nav-item nav-link activo1" title="Acceso miembros de la G.O.E.U." href="#"><span class="icon"><i class="fas fa-key"></i> Acceso </a>
+                      </div>
+			       </div>
+		   		</div>		 
+	       		</nav>
+			</tr>
+			<tr class="segundaFila" id="segundaFila">
+        	   <nav class="navbar navbar-expand-lg bg-inverse navbar-toggleable-sm navbar-light bg-light">
+				  <a class="navbar-brand" href="./index.html"><img src="./images/logoGOEU.png" class="crt-img" alt="logo de la GOEU" title="G.·.O.·.E.·.U.·. - Gran Oriente Español Unido"/></a>
+				  </div>		    
+				  <button class="navbar-toggler" class= "navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+				  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            	  <div class="navbar-nav mr-auto ml-auto text-center dropdown">
+	                <li class="menu container-submenu"><a class="nav-item nav-link activo1" href="./index.html">Inicio</a></li>
+	                <li class="menu container-submenu"><a class="nav-item nav-link activo2 has-dropdown not-click dropdown mr-1 d-flex" data-bs-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="true" id="Masoneria" href="#" onclick="return false">Masonería</a>
+                       <ul class="submenu">
+                          <li><a class="dropdown-item items1" href="#">¿Qué es?</a></li>
+                          <li><a class="dropdown-item items1" href="#">Un poco de historia</a></li>
+                          <li><a class="dropdown-item items1" href="#">Situación en España</a></li>
+                          <li><a class="dropdown-item items1" href="#">La Mujer en la Masonería</a></li>
+                          <li><a class="dropdown-item items1" href="#">Masonería y Política</a></li>
+                       </ul>
+				    </li>
+	                <li class="menu container-submenu"><a class="nav-item nav-link activo3 has-dropdown not-click dropdown mr-1 d-flex" data-bs-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="true" id="navbarDropdown" href="#" onclick="return false">GOEU</a>
+                       <ul class="submenu">
+                          <li><a class="dropdown-item items2" href="#">Sobre nosotros</a></li>
+                          <li><a class="dropdown-item items2" href="#">Nuestras logias</a></li>
+                          <li><a class="dropdown-item items2" href="#">Ritual</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item items2" href="./contacto.html">Contáctenos</a></li>
+                       </ul>
+				    </li>
+	                <li class="menu container-submenu"><a class="nav-item nav-link activo4 has-dropdown not-click dropdown mr-1 d-flex" data-bs-toggle="dropdown" aria-haspopup="true" role="button" aria-expanded="true" id="navbarDropdown" href="#" onclick="return false">Recursos</a>
+                       <ul class="submenu">
+                          <li><a class="dropdown-item items3" href="#">Noticias</a></li>
+                          <li><a class="dropdown-item items3" href="#">Eventos</a></li>
+                          <li><a class="dropdown-item items3" href="#">Masonería Internacional</a></li>
+                          <li><a class="dropdown-item items3" href="#">Libros sobre masonería</a></li>
+                          <li><a class="dropdown-item items3" href="#">Revistas sobre masonería</a></li>
+                          <li><a class="dropdown-item items3" href="#">Cine sobre masonería</a></li>
+                       </ul>
+				    </li>
+                  </div>
+			      <div class="d-flex flex-row justify-content-center">
+	<!-- facebook.--> 
+				     <a href="https://es-es.facebook.com/" target="new" class="botonRed mr-1"><img src="./images/facebookSVG.svg" width="35" alt="logo de Facebook" title="Facebook"/></a>
+	<!-- instagram.--> 
+				     <a href="https://www.instagram.com/?hl=es/" target="new" class="botonRed mr-1"><img src="./images/instagramSVG.svg" width="35" alt="logo de Instagram" title="Instagram"/></a>
+	<!-- twitter.--> 
+				     <a href="https://twitter.com/?lang=es" target="new" class="botonRed mr-1"><img src="./images/twitterSVG.svg" width="35" alt="logo de Twitter" title="Twitter"/></a>
+	<!-- youtube.--> 
+				     <a href="https://www.youtube.com/" target="new" class="botonRed mr-1"><img 
+				     src="./images/youtubeSVG.svg" width="35" alt="logo de YouTube" title="YouTube"/></a>
+			      </div>
+			      </div>
+	           </nav>
+			</tr>
+			<tr class="terceraFila" id="terceraFila">
+			         <div class="wrap">  
+		                <div class="widget">
+				              <div class="fecha">
+				                 <p id="diaSemana" class="diaSemana"></p>
+						         <p>, </p>
+						         <p id="dia" class="dia"></p>
+						         <p>de</p>
+						         <p id="mes" class="mes"></p>
+						         <p>de</p>
+						         <p id="year" class="year"></p>
+						         <p>  </p>
+					             <p id="horas" class="horas"></p>
+						         <p>:</p>
+						         <p id="minutos" class="minutos"></p>
+						         <p>:</p>
+						         <p id="segundos" class="segundos"></p> 
+				              </div>
+				        </div>
+				        <script>
+				     (function(){
+						var actualizarHora = function() {
+						var fecha = new Date(),
+							horas = fecha.getHours(),
+							minutos = fecha.getMinutes(),
+							segundos = fecha.getSeconds(),
+							diaSemana = fecha.getDay(),
+							dia = fecha.getDate(),
+							mes = fecha.getMonth(),
+							year = fecha.getFullYear();
+						var pHoras = document.getElementById('horas'),
+							pMinutos = document.getElementById('minutos'),
+								pSegundos = document.getElementById('segundos'),
+							pDiaSemana = document.getElementById('diaSemana'),
+							pDia = document.getElementById('dia'),
+							pMes = document.getElementById('mes'),
+							pYear = document.getElementById('year');
+						var semana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+						var semanaCatalan = ['Diumenge', 'Dilluns', 'Dimarts', 'Dimecres', 'Dijous', 'Divendres', 'Dissabte'];
+						var semanaEnglish = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+						pDiaSemana.textContent = semana[diaSemana];
+						pDia.textContent = dia;
+						var meses = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+						var mesesCatalan = ['Gener', 'Febrer', 'Març', 'Abril', 'Maig', 'Juny', 'Juliol', 'Agost', 'Setembre', 'Octubre', 'Novembre', 'Desembre'];
+						var mesesEnglish = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+						pMes.textContent = meses[mes];
+						pYear.textContent = year;
+						/**/
+						if (horas < 10) { horas = "0" + horas; };
+						if (minutos < 10) { minutos = "0" + minutos; };
+						if (segundos < 10) { segundos = "0" + segundos; };
+						pHoras.textContent = horas;
+						pMinutos.textContent = minutos;
+						pSegundos.textContent = segundos;
+					  };
+					 actualizarHora();
+					 var intervalo = setInterval(actualizarHora,1000);
+				     })();
+				  </script>
+		             </div>
+		    </tr>
+	    </table>
+      </header>
+	<!-- empieza el cuerpo principal. --> 
+      <main class ="main" id="main"> 
+    <!-- separación de secciones. 	-->	 
+		 <section class="separacion">
+		    <nav class="linea-negra">
+			      <li></li></br>
+			</nav>		 
+		 </section>
+		 <section class="container-3">
+	<!-- definición del artículo dentro del contenedor container-3. -->
+		    <article class="articulo">
+			   <h2><b>¿Qué es la Masonería?</b></h2>
+			   <p align="justify" class="ParrafoIntro"> <b>La Masonería es una sociedad iniciática, filantrópica, discreta, humanista y esotérica que ha estado presente en el mundo de forma especulativa en los últimos 300 años. Pero anteriormente a esta forma de manifestación especulativa, existía una "Masonería Operativa" la cual se considera como la simiente de lo que hoy se entiende como "Masonería Especulativa".</b>
+			   </p></br>
+			   <div class="contain-EscyCompas">
+				   <img src="./images/Escuadra-y-CompasPNG.png" alt="escuadra y compás">
+			   </div></br>
+	           <div class="contain-text-imagen">
+			      <h3><b>Masonería Operativa</b></h3>
+				  <img src="./images/Catedral01PNG.png" alt="catedral 1">
+			      <p align="justify"> La Masonería Operativa tiene su génesis en los constructores de catedrales. Ello es así debido a que el gremio de los constructores era considerado como uno de los más poderosos en cuanto a organización y peso dentro de la sociedad productora de la Época Medieval. Estos constructores hacían uso de la Logia como un espacio en el cual trabajaban, comían y descansaban. Por lo que la connotación de Logia actual dista mucho del significado que para aquél entonces se tenía.  
+			      </p></br>
+			      <p align="justify"> El Maestro albañil era la figura que gestionaba el buen funcionamiento de la Logia. Representaba la máxima autoridad y los aprendices albañiles acataban sus órdenes y sus recomendaciones con el fin de que éstos, algún día, pudieran desempeñar a su vez la maestría para con otros aprendices, en otra Logia.
+			      </p></br>
+			      <p align="justify"> El hecho de construir catedrales implicaba un orden y subordinación perfectas entre las instrucciones del maestro y sus aprendices. El maestro solía diseñar la estructura de la catedral y monitorizar los trabajos mientras que los aprendices iban adquiriendo experiencia en el arte de tratar la piedra. 
+			      </p></br>
+			      <p align="justify"> Es interesante hacer notar que la Masonería Tradicional Especulativa emplea una terminología y simbología heredada de la que hacían uso los maestros y aprendices de los gremios medievales. De la misma forma que el día a día del gremio de los canteros se encontraba regida por unos estatutos, la masonería especulativa se rige también por unos estatutos que pretenden facilitar esta labor de evolución y perfección del masón. 
+			      </p></br>
+               </div>
+			   <div class="contain-EscyCompas">
+				   <img src="./images/Escuadra-y-CompasPNG.png" alt="escuadra y compás">
+			   </div></br>
+	           <div class="contain-text-imagen">
+                  <h3><b>Masonería Especulativa</b></h3>
+				  <img src="./images/Catedral02PNG.png" alt="catedral 2">
+			      <p align="justify"> Con el paso del tiempo, cesó la construcción de las catdrales y la masonería operativa fue evolucionando hacia un aspecto más artístico, permitiendo la incorporación de otros profesionales no necesariamente vinculados con la construcción de las catedrales. Esa mezcolanza de profesionales de distintos gremios y una evolución más artística y filosófica del arte operativo derivó en una masonería más centrada en los aspectos abstractos y morales que atañen al hombre. 
+			      </p></br>
+			      <p align="justify"> Así pues, oficialmente, empiezan a aparecer a principios del s. XVIII las primeras logias de carácter especulativo. Si el lector quiere profundizar un poco más sobre la historia de ambas masonerías: operativa y especulativa, se recomienda consultar la sección <i>"Un poco de historia"</i>.  
+			      </p>
+               </div>
+			</article>		 
+		 </section>
+    <!-- separación de secciones. 	-->	 
+		 <section class="separacion">
+		    <nav class="linea-negra">
+			      <li></li></br>
+			</nav>		 
+		 </section>
+      </main>
+    <!-- definición del footer. -->
+      <footer class="pie-pagina">
+	     <div class="grupo-1">
+		    <div class="box responsive">
+			   <figure align="center">
+	<!-- footer: ubicación Google. -->
+				   <h3><b>Nuestra ubicación:</b></h3>
+				   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2991.381222734287!2d2.1829030154271605!3d41.430949079260145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4bcd81b761555%3A0x7e06561f06e6d9cf!2sCarrer%20del%20Vall%C3%A8s%2C%2087%2C%2008030%20Barcelona!5e0!3m2!1ses!2ses!4v1639086468604!5m2!1ses!2ses" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" frameborder="7">
+				   </iframe>  
+			   </figure>   
+			</div>
+		    <div class="box responsive" align="center">
+			   <h3><b>Más sobre nosotros:</b></h3>
+			   <h4><p>E-mail: informacion@goeu.org</p></h4>
+			   <h4>
+			   <p>Registro Nacional de Asociaciones nº XXXXXX</p></h4>
+			</div>
+		    <div class="box responsive"  align="center">
+			   <h3><b>¿Qué caracteriza a la G. O. E. U.?</b></h3>
+			   <h4><p align="justify">Somos una masonería plural, humanista y a través de la cual buscamos ese saber esotérico que nos permita conocernos mejor a nosotros mismos.</p></h4>
+			   <h4>
+			   <p><b>γνωθι  σεαυτόν.</b></p></h4>
+			   <p>Conócete a ti mismo.</p></h4>
+			   </div>
+			</div>
+		 </div>    
+		 <div class="grupo-2">
+			</br></br></br>
+		    <small>&copy; 2.022 <b>GRAN ORIENTE ESPAÑOL UNIDO</b> - Todos los Derechos Reservados. España.</small>  
+		 </div>  
+      </footer>
+    <!-- recurso JS donde tenemos la lógica de las cookies. --> 
+	   <script src="js/aviso-cookies.js"></script>
+    <!-- plugin de jQuery para el Bootstrap. --> 
+	   <script src="./js/jquery-3.4.1.min.js"></script>
+	<!-- inclusión de los plugins compilados de JavaScript necesarios. -->
+	   <script src="./js/popper.min.js"></script> 
+       <script src="./js/bootstrap-4.4.1.js"></script>
+	<!-- Java Scripts de Bootstrap. -->  	  
+	   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.1/mdb.min.js"></script>
+       <script src="./js/bootstrap.js"></script>
+	<!-- Recurso fontawesome. -->  	  
+	   <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<!-- Recurso achicar header. -->  	  
+       <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	</body>
+</html>
