@@ -1,2 +1,0 @@
-# GOEU.github.io
-GOEU
